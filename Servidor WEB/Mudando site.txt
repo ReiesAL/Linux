@@ -1,0 +1,7 @@
+cv /tmp
+https://github.com/denilsonbonatti/linux-site-dio/archive/refs/heads/main.zip -> copiar o endereco do repositorio github	
+wget https://github.com/denilsonbonatti/linux-site-dio/archive/refs/heads/main.zip ->baixar
+apt install unzip -> se não tiver instalado
+unzip main.zip
+cp -R * /var/www/html/ -> manda tudo pra pasta html
+

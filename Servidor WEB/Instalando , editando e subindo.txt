@@ -1,0 +1,17 @@
+INSTALANDO
+apt install apache2 -y
+systemctl status apache2 ->ve se esta rodando
+cd var/www/html/
+rm index.html -> excluindo o html padrao
+nano index.html-> cria seu proprio index.html
+
+EDITANDO O index .html 
+<html>
+
+     <h1>Este é meu site HTML disponivel em um servidor Linux
+
+</html>
+
+UPDATE , UPGRADE
+apt update -y
+apt upgrade -y
