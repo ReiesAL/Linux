@@ -1,0 +1,2 @@
+apt search mysql-server
+apt install mysql-server-8.0 -y

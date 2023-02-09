@@ -1,0 +1,5 @@
+EXECUTANDO SCRIPTS
+cd /scripts
+chmod +x iacl.sh -> executa o script iacl.sh
+./iacl.sh -> executa o script iacl.sh
+
