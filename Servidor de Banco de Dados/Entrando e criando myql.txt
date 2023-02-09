@@ -1,0 +1,10 @@
+ENTRANDO NO BANDO DE DADOS
+mysql -u -root -p
+senha root
+-----------------
+CRIANDO BANCO DE DADOS
+create database meubanco; -> cria o banco meubanco
+show databases -> mostra os bancos
+use meubanco; -> usa o banco de dados meubanco
+create table Pessoas (PessoasID int, Nome varchar(50), Endereco varchar(100), Cidade varchar(50)); -> criando coluna
+show tables ->mostra tabelas

@@ -1,0 +1,16 @@
+apt instal git -y -> instalar git
+git config --global user.email "rafael.corvino2@gmail.com"
+git config --global user.name "corvinao"
+
+
+
+
+git init -> inicia o github
+git add .
+git comit -m "Arquivos IaC v.1"
+git branch -M main
+git remote add origin https://github.com/rafaelcorvino1/linux-projeto1-iac.git
+git push -u origin main
+PASSWORD = TOKEN
+
+

@@ -1,0 +1,5 @@
+#
+chmod +x script-iac2.sh -> libera o script
+./script-iac2.sh
+
+

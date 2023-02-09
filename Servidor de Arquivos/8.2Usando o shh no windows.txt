@@ -1,0 +1,11 @@
+ENTRAR NO SSH PELO WINDOWS
+pegar o ip do linux
+ip a
+
+entrar em uma pasta do windows
+por como destino \\10.0.2.15\publica
+entrar com credenciais
+------------------------------
+CRIANDO CAMINHO DE REDE ( z: )
+Este computador -> propriedades -> mais opçoes -> mapear unidade de rede
+poe o \\10.0.2.15\publica
