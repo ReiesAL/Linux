@@ -1,0 +1,6 @@
+loader.io ->site
+por ip e verify
+cd /var/lib/docker/volumes/app/_data# "codigo gerado pelo site"
+fazer tester no site
+
+
