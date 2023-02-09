@@ -1,0 +1,23 @@
+DELETEANDO PASTAS
+rm -Rf /adm/ ->deleta pasta adm
+-----------------------------
+CHECANDO USUARIOS
+cat /etc/passwd ->checa users
+--------------------------------
+EXCLUIR USUARIO
+userdel "nome do usuario"
+
+-------------------------------------------
+EXCLUIR GRUPOS
+cat /etc/group -> ver grupos
+groupdel "nome do grupo" -> deleta grupo
+
+-------------------------------------
+SCRIPT
+cd scripts
+nano iacl.sh -> iacl = instructure as a code line
+echo "Criando diretorios..." -> deixar com informacao qdo executua
+-m ->cria a pasta de usuario
+-s -> vai ter um script no bin/bash
+-p ->password
+

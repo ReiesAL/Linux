@@ -1,0 +1,30 @@
+COPIANDO ARQUIVOS
+cp -> copy
+cp -i -v /home/kali/bancodedados.mdf /disk2/ -> manda o bancodedados.mdf para /disk2/
+cp -i -v /home/kali/*.txt /disk2 -> manda todos os .txt para o disk2
+cp -i -v ./a* /disk2/ -> manda todos os que comecam com "a"´para o disk2
+cp -i -v /home/kali/* /disk2/ -> copia todos da pasta kali para disk2
+cp -r -v /home/kali/* /disk2/ -> copia todos da pasta e ARQUIVOS kali para disk2
+ -i -> para perguntar se vc quer sobrepor arquivos com mesmo nome
+ -v ->mostra oq ta acontecendo
+---------------------------------------------
+MOVENDO ARQUIVOS(ctrl + x)(cortar)
+mv -i -v /home/kali/planilhas.xlsx /disk2/ -> move de planilhas.xlsx para disk2
+mv -i -v /home/kali/* /disk2/ ->mover todos
+-------------------------------------------------------
+VIZUALIZANDO PROCESSOS
+ps a ->mostra o processo de todos os usuarios
+ps au -> " com horarios e datas
+ps aux -> " " e foram executados fora do console
+
+--------------------------------------------------
+ENCERANDO PROCESSOS
+kill "codigo" (usar o ps aux antes para achar o codigo) ->mata o processo
+killall chrome ->mata todos os processos do chrome
+---------------------
+DERRUBANDO UM USUARIO
+who -a ->para ver quem ta logado
+kill "2311" ->mata o usuario 2311(pegar id no who -a)
+-------------------------------
+RENOMEAR
+mv documentos.txt cartas.txt -> muda o nome de doc.txt para cartas

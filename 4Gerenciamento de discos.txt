@@ -1,0 +1,31 @@
+VER OS DISCOS ATIVOS
+lsblk -o +ROTA,DISC-GRAN -> mostra todos os discos
+sda = primeiro disco
+sdb = segundo disco
+sdx = x disco
+lsblk-> mostra disco
+fdisk -l ->lista os discos
+shutdown 0 -> deliga a VM
+-------------------------------------------
+ADICIONAR DICO NOVO
+fdisk /dev/sdb -> instala o disco b
+n
+p
+1
+"clica enter"
+w
+
+
+mkfs.ext4 /dev/sdb -y ->criar a partição b
+cd /mnt/
+mkdir disco2
+mount /dev/sdb /mnt/disco2/
+------------------------------------------------------
+DESMONTAR DISCO
+umount /dev/sdb -> desmonta mas nao deleta
+-------------------------------------------
+MONTANDO DISCOS AUTOMATICAMENTE(ja liga funcionando)
+nano /etc/fstab
+dev/sdb /disk2 ext4 defaults 0 0 -> automatiza o sdb
+
+	

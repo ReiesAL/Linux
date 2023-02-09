@@ -1,0 +1,94 @@
+INSTALAR OPENSSH
+sudo apt-get install openssh-server
+------------------------------
+ACESSAR MAQUINA VIA SSH
+ssh kali@192.168.0.4 -> conectar via ssh no usuario kali ip 192.168.0.4
+----------------------------------------
+ACESSAR MAQUINA VIRTUAL AWS VIA SSH
+sudo chmod 600 Ubuntu-AWS.pem -> pegar a key
+PuTTy -> usa pra conectar no ssh
+ssh -i Ubuntu-AWS.pem ubuntu@192.168.0.4 -> entrar com a chave
+------------------------------------------
+SABER EM QUAL PASTA VC ESTA
+pwd
+-------------------------------------------------
+MUDAR DIRETORIO
+cd / ->volta pro principal C:
+cd ~ ->volta pro usuario
+cd .. -> volta 1 diretorio
+cd ../lips -> volta 1 e entra no lips
+-------------------------
+PESQUISAR ARQUIVOS
+ls ss* -> lista os arquivos q comecam com ss
+ls | more -> lista os arquivos
+ls -la ->mostra melhor
+ls m?g* -> comeca com m , terceira letra g , * qlquer coisa
+ls -a -> todos os diretorios(ocultos)
+ls -lh -> lista todos e mostra o tamanho dos diretorios em KBytes
+
+-------------------------------
+CRIAR DIRETORIO(pasta)/deletar
+mkdir  Documentos -> cria diretorio Documentos
+mkdir /home/kali/Documentos/lalala -> cria diretorio lalala em Documentos
+mkdir Documentos Planilhas -> cria os 2
+mkdir 'Meus Documentos" -> cria o diretorio Meus Documentos(com espaço)
+rmdir nomedodiretorio
+---------------------------------
+MOSTRAR OQUE ESTA ACONTECENDO
+-v (verbose)
+--------------
+LER ARQUIVOS
+cat /etc/documentos   ->le o arquivo
+nano /etc/documentos  ->edita o arquivo
+
+
+----------------------------------
+CRIAR ARQUIVO
+touch arquivo1.txt -> cria o arquivo1.txt
+rm arquivo1.txt -> deleta o arquivo1.txt
+rm *.txt -> deleta todos os .txt
+rm arquivo* -> deleta todos os q comecam com arquivo
+rm -rf Documentos/ -> apaga tudo que tem dentro da pasta Documentos
+------------------
+FILTRAR
+ls arquivo[1-3]* -> lista do arquivo1ao3.*
+ls arquivo[^3-5]* -> lista todos menos do 3 ao 5
+-----------------------------------------------
+ACHAR ARQUIVO
+find -name arq* -> filtra todos os que comecam com arq e mostra em qual pasta esta
+------------------
+AJUDA
+comando --help -> da os paramentros do comando
+-----------------------------------------
+LIBERAR USUARIO ROOT NO SSH
+
+sudo nano /etc/ssh/sshd_config
+mudar pra yes
+systemctl status sshd -> ver STATUS(mostra historico de quem ta acessando o sistema)
+systemctl restart sshd -> ativa
+
+--------------------------------------------------
+nano -> edita facil (ctrl + o para salvar)(ctrl + x pra sair)
+vi -> edita porem se nao tiver o arquivo ele cria e abre com melhor visualização(:wq pra sair)(i para liberar edicao)
+---------------------------------------------------
+LER HISTORICO DE COMANDOS
+export HISTTIMEFORMAT="%c" ->usar antes para aparecer a data e hora no history
+history -> mostra os ultimos 1000 comandos usados
+%d day
+%m month
+%y year
+%H hour
+%M minutes
+%S seconds
+%F full date(Y-M-D format)
+%T (H:M:S format)
+-------------------------------------------------
+APAGAR HISTORICO
+history -c ->apaga historico de comandos usados
+set +o history ->nao armaze os comandos usados
+----------------------------------------------
+
+
+
+
+

@@ -1,0 +1,11 @@
+ADICIONANDO/DELETAR USUARIOS
+useradd joao -> cria usuario joao (nao usar letras maiusculas nem espaço)
+userdel -f -r joao -> deletar tudo joao
+useradd joao -m -c "João da Silva note 1"
+psswd joao ->nova senha
+chsh -> change shell
+chsh -s /bin/bash joao
+
+
+sudo useradd maria -m -c "Maria da Graça" -s /bin/bash -> cria usuario completo
+sudo psswd maria ->nova senha

@@ -1,0 +1,13 @@
+GERENCIAMENTO DE PACOTES
+INSTALAR
+apt -get (usa pra fazer script, mais rapido)
+apt --installed -> mostra os softwares instalados na maquina
+apt install "nome do programa"
+
+------------------
+DESINSTALAR
+apt remove "nome do programa"
+-----------------
+ATUALIZACAO
+apt update
+apt upgrade
